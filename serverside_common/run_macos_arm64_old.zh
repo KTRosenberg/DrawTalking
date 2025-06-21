@@ -1,0 +1,4 @@
+source ~/miniforge3/etc/profile.d/conda.sh
+conda activate make_the_thing
+node serverside.js $@
+conda deactivate

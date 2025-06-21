@@ -1,0 +1,2 @@
+echo "arm64"
+./run_macos_arm64_old.zh $@

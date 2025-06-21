@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This application will use webcam data for communication with the user&apos;s permission</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2021 Toby Rosenberg. All rights reserved.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>The application requires network connectivity</string>
+	<key>NSMainStoryboardFile</key>
+	<string>Main</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This application captures microphone input for speech recognition. No data are sent to third-parties. We process your speech  to let you create and control content within the application. No data are saved unless the user explicitly gives the researchers permission. In such a case, information would be anonymized.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>add online images to use for objects and characters in your world</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Display images in the world for use as avatars, characters, and icons to supplement hand-drawn content</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Use speech to create and control things in the world</string>
+	<key>SHORT_NAME</key>
+	<string>Make The Thing</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>metal</string>
+		<string>microphone</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+</dict>
+</plist>

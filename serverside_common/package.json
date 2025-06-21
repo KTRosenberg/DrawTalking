@@ -1,0 +1,21 @@
+{
+  "name": "Make-The-Thing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverside.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "CC BY-NC-SA 4.0",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "command-line-args": "^5.1.1",
+    "express": "^4.16.2",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.9",
+    "replace": "^1.2.0",
+    "ws": "^7.2.3"
+  }
+}

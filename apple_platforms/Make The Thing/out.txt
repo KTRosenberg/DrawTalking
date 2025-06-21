@@ -1,0 +1,17 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -scheme "Make The Thing macos"
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Computing target dependency graph and provisioning inputs
+
+Create build description
+
+note: Building targets in dependency order
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk /Users/tobyrosenberg/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
+    cd /Users/tobyrosenberg/Documents/prog/Make-the-Thing/apple_platforms/Make\ The\ Thing/Make\ The\ Thing.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o /Users/tobyrosenberg/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
+
+** BUILD SUCCEEDED **
+

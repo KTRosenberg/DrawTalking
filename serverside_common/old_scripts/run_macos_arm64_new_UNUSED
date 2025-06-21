@@ -1,0 +1,3 @@
+source ./env/bin/activate 
+node serverside.js $@
+deactivate

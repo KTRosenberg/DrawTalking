@@ -1,0 +1,30 @@
+source ~/miniforge3/etc/profile.d
+
+conda activate make_the_thing
+
+conda install rust 
+#export CARGO_BUILD_TARGET="aarch64-apple-darwin"
+conda install -c conda-forge spacy=3.1.4
+
+python3 -m spacy download en_core_web_trf
+python3 -m spacy download en_core_web_lg
+
+conda install -c apple tensorflow-deps=2.8.0
+pip3 install tensorflow-macos==2.7.0
+pip3 install tensorflow-metal==0.3.0
+git clone https://github.com/msg-systems/coreferee.git
+mv ./coreferee ./coreferee_container
+cd ./coreferee_container
+python3 -m coreferee install en==1.0
+cd ..
+
+pip3 install thinc-apple-ops==0.0.5
+
+pip3 install nltk==3.7
+pip3 uninstall numpy
+pip3 install numpy
+python3 nltk_init.py --no-cache-dir
+
+npm install
+
+conda deactivate

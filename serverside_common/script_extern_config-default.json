@@ -1,0 +1,8 @@
+{
+    "isExternalEnabled": false,
+    "environmentSetup": "source py-ext/bin/activate",
+    "command": [
+        "python3"
+    ],
+    "entryScript": "./script-language-processing-extern.py"
+}

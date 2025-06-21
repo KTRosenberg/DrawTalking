@@ -1,0 +1,34 @@
+
+original_list=('libs/flecs')
+original_to_copy_list=('flecs.h' 'flecs.c')
+source_list=('libs/Flecs-ecs-personal/source')
+target_list=('../entity_component_system')
+
+for i in "${!source_list[@]}"; do
+    
+    echo "index: ${i}, value: ${source_list[$i]} value: ${target_list[$i]}"
+    
+    ORIGINAL_PATH=$PROG_PATH/${original_list[$i]}/
+    FULL_PATH=$PROG_PATH/${source_list[$i]}/.
+    
+    if [ "$1" != "np" ];
+    then
+        pushd $ORIGINAL_PATH
+            echo "GIT PULL ORIGINAL"
+            git pull origin master --force
+            pwd
+            cp -- "${original_to_copy_list[@]}" $PROG_PATH/${source_list[$i]}
+        popd
+        
+        pushd $FULL_PATH
+            git pull origin
+            git add --all
+            git commit -m "$(date "+%H:%M:%S")"
+            git push origin
+        popd
+    fi
+
+    echo "copying..."
+
+    cp -r $FULL_PATH ${target_list[$i]}
+done

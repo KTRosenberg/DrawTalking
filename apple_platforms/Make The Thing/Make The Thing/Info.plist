@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Make The Thing</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string></string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>This application will feature ARKit world tracking in the future. No camera data are sent anywhere.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This application requires network connectivity to give you results.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This application captures microphone input for speech recognition. No data are sent to third-parties. We process your speech  to let you create and control content within the application. No data are saved unless the user explicitly gives the researchers permission. In such a case, information would be anonymized.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>ARKit world tracking. Nothing is sent to other parties</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>add online images to use for objects and characters in your world</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Display images in the world for use as avatars, characters, and icons to supplement hand-drawn content</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Use speech to create and control things in the world</string>
+	<key>OSLogPreferences</key>
+	<dict>
+		<key>mtt.main</key>
+		<dict>
+			<key>bg.drawtalk</key>
+			<dict>
+				<key>Enable-Private-Data</key>
+				<true/>
+			</dict>
+			<key>drawtalk</key>
+			<dict>
+				<key>Enable-Private-Data</key>
+				<true/>
+			</dict>
+			<key>mtt</key>
+			<dict>
+				<key>Enable-Private-Data</key>
+				<true/>
+			</dict>
+			<key>render</key>
+			<dict>
+				<key>Enable-Private-Data</key>
+				<true/>
+			</dict>
+			<key>stratadraw</key>
+			<dict>
+				<key>Enable-Private-Data</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>SHORT_NAME</key>
+	<string>Make The Thing</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UIApplicationSupportsTabbedSceneCollection</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>microphone</string>
+		<string>arm64</string>
+		<string>arkit</string>
+		<string>metal</string>
+	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>

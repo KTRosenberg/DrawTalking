@@ -1,0 +1,56 @@
+python3.9 -m venv env
+source env/bin/activate
+
+# disregard rustc compilation error in tokenizers library
+export RUSTFLAGS="-A invalid_reference_casting"
+
+pip3 install -U pip setuptools wheel
+
+# force specific dependency versions
+pip3 install protobuf==3.20
+pip3 install numpy==1.22
+pip3 install torch==1.13
+pip3 install typing_extensions==4.4
+
+pip3 install -U 'spacy[apple]'==3.1.4
+
+pip3 install tensorflow-macos==2.7.0
+pip3 install tensorflow-metal==0.3.0
+if [ -f ./thinc_apple_ops-0.0.5.tar.gz ]; then
+    pip3 install thinc_apple_ops-0.0.5.tar.gz
+elif [ -f ./thinc_apple_ops-0.0.5.tar ]; then
+	pip3 install thinc_apple_ops-0.0.5.tar
+elif [ -d ./thinc_apple_ops-0.0.5 ]; then
+	pip3 install ./thinc_apple_ops-0.0.5
+else
+	pip3 install thinc-apple-ops==0.0.5
+fi
+
+# if you have the tar.gz files, uncomment the following 2 lines
+
+# pip3 install en_core_web_lg-3.1.0.tar.gz
+# pip3 install en_core_web_trf-3.1.0.tar.gz
+
+# if you have the tar.gz files, comment the following 2 lines
+
+pip3 install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.1.0/en_core_web_lg-3.1.0.tar.gz
+
+pip3 install https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.1.0/en_core_web_trf-3.1.0.tar.gz
+
+cd ./coreferee_container
+pip3 install ./
+cd models/en
+pip3 install ./
+cd ../../..
+
+pip3 install nltk==3.7
+
+python3 nltk_init.py
+
+deactivate
+
+npm install
+
+cp ./script_extern_config-default.json ./script_extern_config.json
+
+echo "DONE"

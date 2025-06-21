@@ -1,0 +1,191 @@
+//
+//  Make_The_Thing_macos.pch
+//  Make The Thing macos
+//
+//  Created by Toby Rosenberg on 11/7/21.
+//  Copyright © 2021 Toby Rosenberg. All rights reserved.
+//
+
+#ifndef Make_The_Thing_macos_pch
+#define Make_The_Thing_macos_pch
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <TargetConditionals.h>
+#include <wchar.h>
+#include <stdbool.h>
+#include <string.h>
+#include <simd/simd.h>
+#include <stddef.h>
+#include <sys/mman.h>
+#include <dlfcn.h>
+
+#include <unistd.h>
+#include <spawn.h>
+#include <sys/wait.h>
+
+#define USE_GLM
+
+#include "argparse.h"
+
+#include "types_common.h"
+
+#include "c_common.h"
+
+
+
+#include "mtt_platform.h"
+#define MTT_PLATFORM MTT_PLATFORM_TYPE_MACOS_DESKTOP
+
+
+
+
+#include "mtt_logging.h"
+
+
+#include "nanovg_src/nanovg.h"
+
+
+
+#if defined(__OBJC__)
+#import <objc/runtime.h>
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
+#import <ModelIO/ModelIO.h>
+#import <Metal/Metal.h>
+#import <MetalKit/MetalKit.h>
+#import <MetalPerformanceShaders/MetalPerformanceShaders.h>
+//#import <ARKit/ARKit.h>
+#import <Speech/Speech.h>
+#import <VideoToolbox/VideoToolbox.h>
+#import "CoreMediaIO/CoreMediaIO.h"
+#import <AVFoundation/AVFoundation.h>
+#import <ScreenCaptureKit/ScreenCaptureKit.h>
+#import <Network/Network.h>
+
+
+#import "GCD/GCDAsyncSocket.h"
+#import "GCD/GCDAsyncUdpSocket.h"
+
+#include "nanovg_mtl.h"
+
+
+#endif
+
+
+#include "flecs_options.h"
+
+#ifdef __cplusplus
+#include "box2d_includes.h"
+#include <array>
+#include <vector>
+#include <queue>
+#include <algorithm>
+#include <iostream>
+#include <functional>
+#include <variant>
+#include <list>
+#include <utility>
+
+#include <string>
+
+#include <iomanip>
+
+#include <limits>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <optional>
+#include <memory>
+#include <numeric>
+#include <queue>
+
+
+#define MATHEMATICS_LOCAL_INCLUDE
+#define GLM_FORCE_DEPTH_ZERO_TO_ONE
+#define CGLM_FORCE_DEPTH_ZERO_TO_ONE
+
+//#define GLM_FORCE_LEFT_HANDED
+#include "mathematics.h"
+
+//#include <assert.h>
+#include "small_vector.h"
+#include "robin_hood.h"
+#include "cpp_common.hpp"
+
+
+#include "sort.hpp"
+
+#include "array.hpp"
+
+#include "linked_list.hpp"
+#include "tree.hpp"
+
+//#include "exprtk.hpp"
+
+
+//#if !defined(__OBJC__) || defined(__cplusplus)
+#ifdef MTT_FLECS_NEW
+#include "entity_component_system/flecs_new.h"
+#else
+#include "entity_component_system/flecs.h"
+#endif
+#include "entity_component_system/flecs_legacy.h"
+
+
+//#endif
+
+
+
+
+//#include "entity_component_system/flecs_os_api_posix.h"
+
+
+
+
+
+
+//#include "clipper.hpp"
+#include "clipper2/clipper.h"
+#include "earcut.hpp"
+#define ARDUINOJSON_DECODE_UNICODE 1
+#include "ArduinoJson.h"
+
+#include "RamerDouglasPeucker.hpp"
+#include "PolynomialRegression.h"
+#include "IITree.h"
+
+#include "Small_Lambda.hpp"
+
+#include "thing_shared_types.hpp"
+#include "drawtalk_shared_types.hpp"
+#include "curve.hpp"
+
+#include "string_intern.hpp"
+
+#include "input.hpp"
+
+#include "make_the_thing.h"
+
+//#include "stratadraw/stratadraw.h"
+
+#include "recording.hpp"
+
+#include "dynamic_api.hpp"
+
+#include "dynamic_library_shared.hpp"
+
+//#include "drawtalk_world.hpp"
+
+#include "regular_expr.hpp"
+
+
+
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Make_The_Thing_macos_pch */

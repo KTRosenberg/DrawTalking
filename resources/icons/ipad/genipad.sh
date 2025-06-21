@@ -1,0 +1,2 @@
+#!/bin/sh
+./../imgresizenoalpha.sh $1 20x20 40x40 29x29 58x58 40x40 80x80 76x76 152x152 167x167 1024x1024

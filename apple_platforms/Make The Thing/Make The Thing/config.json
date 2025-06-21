@@ -1,0 +1,12 @@
+{
+    "config_version" : 1,
+    "DrawTalk" : {
+        "nlp_server" : {
+            "default_host_ip_address" : "corelink.hpc.nyu.edu",
+            "default_host_port"       : 20017,
+            "local_host_ip_address"   : "192.168.1.164",
+            "local_host_port"         : 8080,
+            "force_remote"            : false
+        }
+    }   
+}
