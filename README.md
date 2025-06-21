@@ -6,7 +6,11 @@
 - **Outreach**: please feel free to reach-out! (Use the e-mail on the website) I'm open to collaborations and conversations.
 - **Questions**: as part of outreach, I'm happy to answer questions. The best starter documentation is on the web-page.
 
-https://github.com/user-attachments/assets/5987337d-adc5-4534-a506-061de6aa28f5
+
+
+https://github.com/user-attachments/assets/e43605af-f2cd-40a7-b78a-08faa7dc4354
+
+
 
 ## Contents
 - [Materials](#materials)
