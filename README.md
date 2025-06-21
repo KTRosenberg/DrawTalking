@@ -1,4 +1,4 @@
-# Make The Thing - DrawTalking
+# DrawTalking
 - A prototype for building interactive worlds and telling stories at the same time by sketching and speaking
 - [**UIST 2024 research publication**: "DrawTalking: Building Interactive Worlds by Sketching and Speaking"](https://dl.acm.org/doi/10.1145/3654777.3676334)
 - (Also a main component of my Ph.D. thesis.)
