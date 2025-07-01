@@ -111,7 +111,7 @@ https://github.com/user-attachments/assets/e43605af-f2cd-40a7-b78a-08faa7dc4354
       `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
       - When the rust installation process is done, close/reopen a new terminal window for the quickest way to proceed with the rust toolchain enabled. Make sure the command `rustc` works.
   - in the terminal, change the directory to the root project directory and down to the `serverside_common` directory
-  - download `coreferee-container` from [https://drive.google.com/file/d/1RvvZFpmfc7EoUzhnlv8-BygMx4nOG3Nw/view?usp=sharing](https://drive.google.com/file/d/1RvvZFpmfc7EoUzhnlv8-BygMx4nOG3Nw/view?usp=sharing) and unzip it into `serverside_common` (This is a minimal preserved clone of the [coreferee repository](https://github.com/richardpaulhudson/coreferee?tab=readme-ov-file#version-120). Version 1.2.0 and no later are required.)
+  - download `coreferee_container` from [https://drive.google.com/file/d/1RvvZFpmfc7EoUzhnlv8-BygMx4nOG3Nw/view?usp=sharing](https://drive.google.com/file/d/1RvvZFpmfc7EoUzhnlv8-BygMx4nOG3Nw/view?usp=sharing) and unzip it into `serverside_common` (This is a minimal preserved clone of the [coreferee repository](https://github.com/richardpaulhudson/coreferee?tab=readme-ov-file#version-120). Version 1.2.0 and no later are required.)
   - run the main installation script with the command (This installs all Python dependencies in isolation using a virual environment.):
     `. ./init-macos-arm64.zh`
     - NOTE: the initial dot before specifying the script is important to make sure the script runs in the correct environment. 
